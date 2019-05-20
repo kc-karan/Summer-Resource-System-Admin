@@ -1,0 +1,109 @@
+.body{
+  
+}
+
+.header{
+  border: 10px black;
+  
+}
+
+#team-no{
+   margin-right: 25%;
+   color:aqua;
+   font-family: 'PT Sans', sans-serif;
+}
+
+#round-counter{
+
+  margin-left: 25%;
+  color:aqua;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#flex-container{
+  
+  display: flex;
+   
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-items: baseline;
+  background: rgba(39, 1, 255, 0.294);
+  border-radius: 20px;
+  
+}
+
+#custom-button {
+  padding: 10px;
+  color: white;
+  background-color:  rgba(39, 1, 255, 0.294);
+ 
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  background-color:#c266ff;
+}
+
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+
+#logo {
+  margin: none;
+  height: 5%;
+  width: 10%;
+}
+
+#button-text{
+  color: aqua;
+}
+
+#flex-container-2{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  align-items: baseline;
+
+}
+
+#team-name-table{
+  background: rgba(39, 1, 255, 0.294);
+  border-radius: 20px;
+  margin-left: 15%;
+}
+
+#team-name{
+  display: flex;
+  color:aqua;
+  font-family: 'PT Sans', sans-serif;
+  background: rgba(39, 1, 255, 0.294);
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  
+}
+
+#submission-details-table{
+  display: flex;
+  color:aqua;
+  font-family: 'PT Sans', sans-serif;
+  background: rgba(39, 1, 255, 0.294);
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  line-height: 22px;
+}
+
+#team-name-table{
+  background: rgba(39, 1, 255, 0.294);
+  border-radius: 20px;
+ 
+}
+
+#submission-details-table:nth-child(even){
+  
+}

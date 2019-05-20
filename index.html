@@ -1,0 +1,102 @@
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans|Roboto+Condensed&display=swap" rel="stylesheet">
+        <title>lorem</title>
+    </head>
+   
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <body bgcolor="#191966">
+       <div id="flex-container"> 
+           <header class="header"> 
+           <span id="team-no">TEAM NO.</span>  
+           <span style="flex-basis: 200px"><img src="img/logo.svg" alt="logo" id="logo"> </span>  
+           <span id="round-counter">ROUND 1</span> 
+           </header>
+       </div>   
+       <br>
+       <br>  
+          <span id="flex-container-2"> 
+              <table style="width: 20%" id="team-name-table">
+             <tr>
+                 <th>
+                     <span id="team-name">TEAM NAME</span>
+                 </th>
+             </tr>
+             <tr>
+                 <td style="color: aliceblue">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam quis voluptatem aut nostrum, ipsa neque consequatur ab non unde veniam animi omnis ad sapiente officia reiciendis! Repudiandae, aspernatur labore.
+
+                 </td>
+             </tr>
+               </table>
+               <table id="submission-details-table" style="width: 40% ; height: 50% ; flex-basis: 50%; margin-left: 5%;">
+                   <tr>
+                       <th style="background: ">
+                           SUBMISSION DETAILS
+                       </th>
+                   </tr>
+                   <tr>
+                       <td style="color: aliceblue; float: left;">
+                        1.
+                       </td>
+                   </tr>
+                   <tr>
+                        <td style="color: aliceblue">
+                          2.  
+                        </td>
+                    </tr>
+                    <tr>
+                            <td style="color: aliceblue">
+                              3.  
+                            </td>
+                        </tr>
+                        <tr>
+                                <td style="color: aliceblue">
+                                  4.  
+                                </td>
+                        </tr>
+                        <tr>
+                                <td style="color: aliceblue">
+                                  5.  
+                                </td>
+                        </tr>
+                       
+               </table>
+            
+            </span>
+          <br><br>
+       <input type="file" id="real-file" hidden="hidden" />
+        <div style="float: right; margin-right: 23%">
+            <button type="button" id="custom-button" ><span id="button-text">CHOOSE A FILE</span></button>
+            <span id="custom-text" >No file chosen, yet.</span>
+        </div>
+        
+    
+        <script type="text/javascript">
+            const realFileBtn = document.getElementById("real-file");
+            const customBtn = document.getElementById("custom-button");
+            const customTxt = document.getElementById("custom-text");
+
+            customBtn.addEventListener("click", function() {
+                  realFileBtn.click();
+            });
+
+                    realFileBtn.addEventListener("change", function() {
+                        if (realFileBtn.value) {
+                          customTxt.innerHTML = realFileBtn.value.match(
+                        /[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+                                                    
+                        } else {
+                         customTxt.innerHTML = "No file chosen, yet.";
+                                }
+            });
+
+        </script>
+      
+    </body>
+       
+
+
+</html>
